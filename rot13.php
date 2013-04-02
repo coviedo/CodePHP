@@ -2,7 +2,7 @@
 
 /**
  * 
- * Segunda Implementacion De ROT13
+ * Primera Implementacion De ROT13
  * 
  * @param String $myStr
  * @return String
