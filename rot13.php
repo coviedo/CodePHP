@@ -2,10 +2,10 @@
 
 /**
  * 
- * Sencilla Implementacion De ROT13
+ * Segunda Implementacion De ROT13
  * 
  * @param String $myStr
- * @return Array
+ * @return String
  * 
  */
 function rot13($myStr) {
