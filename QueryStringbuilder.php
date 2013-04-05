@@ -1,15 +1,15 @@
 <?php
 
  $tbCompania = array(
-       'Nombre'       =>  '2013-08-10'
-     , 'RazonSocial'  =>  'Prueba S.R.L'
-     , 'Direccion'    =>  'C/Prueba No.234 Enc: Pruebas'
-     , 'Web'          =>  'www.prueba.net'
-     , 'CodPostal'    =>   3984773
+      'Nombre'       =>  '2013-08-10'
+     ,'RazonSocial'  =>  'Prueba S.R.L'
+     ,'Direccion'    =>  'C/Prueba No.234 Enc: Pruebas'
+     ,'Web'          =>  'www.prueba.net'
+     ,'CodPostal'    =>   3984773
  );
-
+ 
  echo formatSql($tbCompania,  'compania');
-
+ 
  
  /**
   * 
@@ -18,10 +18,8 @@
   * @return string
   */
  function formatSql(array $dataArray, $tabla) {
-     
-     $sqlString = '';
-     $insertStr = 'INSER INTRO ' . $tabla;
-       
+  
+     $insertStr = 'INSER INTRO ' . $tabla;   
      $row  = 'VALUES' . $field = '(';
      
      foreach ($dataArray as $index => $value) {
