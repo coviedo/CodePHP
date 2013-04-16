@@ -21,7 +21,7 @@ function rot13($myStr) {
         $posChr   = FALSE;
         
         if (($posChr = strpos($arrAbs, $chrUpper))) {
-            $index = ($posChr < (26 / 2)) ? ((26 / 2) + $posChr) : ($posChr - 13);
+            $index = ($posChr <= (26 / 2)) ? ((26 / 2) + $posChr) : ($posChr - 13);
             $newChr = $newArray{$index};
             $chr = (ord($chrUpper) >= ord($chr)) ? strtoupper($newChr): strtolower($newChr);
         }
